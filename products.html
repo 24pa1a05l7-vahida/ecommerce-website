@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ShopSphere</div>
+        <a href="cart.html" style="color:white;">Cart 🛒</a>
+    </nav>
+
+    <h1 style="text-align:center;">All Products</h1>
+
+    <div class="filters">
+
+        <select id="categoryFilter">
+            <option value="All">All Categories</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Fashion">Fashion</option>
+        </select>
+
+        <select id="priceFilter">
+            <option value="All">All Prices</option>
+            <option value="2000">Below ₹2000</option>
+            <option value="10000">Below ₹10000</option>
+            <option value="50000">Below ₹50000</option>
+        </select>
+
+        <select id="sortOption">
+            <option value="default">Sort By</option>
+            <option value="lowToHigh">Price: Low to High</option>
+            <option value="highToLow">Price: High to Low</option>
+            <option value="ratingHigh">Rating: High to Low</option>
+        </select>
+
+    </div>
+
+    <div class="product-container" id="product-container"></div>
+
+    <script src="data/products.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
